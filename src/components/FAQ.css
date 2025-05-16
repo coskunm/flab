@@ -1,0 +1,127 @@
+.faq-section {
+  padding: 60px 0;
+  background-color: #f9fafd;
+}
+
+.faq-heading {
+  font-size: 2rem;
+  color: var(--text-primary);
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+  font-weight: 700;
+}
+
+.faq-heading:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #1976D2, #0D47A1);
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+
+.faq-container {
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  background-color: #fff;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.faq-item.open {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.faq-question {
+  padding: 18px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.2s;
+}
+
+.faq-question:hover {
+  background-color: rgba(25, 118, 210, 0.02);
+}
+
+.faq-item.open .faq-question {
+  border-bottom: 1px solid rgba(25, 118, 210, 0.1);
+}
+
+.faq-question h3 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1.4;
+}
+
+.faq-answer {
+  padding: 20px 24px;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  animation: fadeIn 0.4s ease;
+}
+
+.faq-answer p {
+  margin: 0 0 12px 0;
+}
+
+.faq-answer p:last-child {
+  margin-bottom: 0;
+}
+
+.faq-answer strong {
+  color: var(--accent-color);
+  font-weight: 600;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .faq-heading {
+    font-size: 1.8rem;
+  }
+  
+  .faq-question h3 {
+    font-size: 0.95rem;
+  }
+  
+  .faq-answer {
+    padding: 16px 20px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .faq-heading {
+    font-size: 1.6rem;
+  }
+  
+  .faq-question {
+    padding: 16px 18px;
+  }
+  
+  .faq-question h3 {
+    font-size: 0.9rem;
+  }
+}
