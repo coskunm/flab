@@ -4,7 +4,7 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import BrokerList from './components/BrokerList';
 import FAQ from './components/FAQ';
-import ContactForm from './components/ContactForm';
+import Contact from './components/Contact';
 import Footer from './components/Footer';
 import './App.css';
 
@@ -15,7 +15,7 @@ function App() {
       <Hero />
       <BrokerList />
       <FAQ />
-      <ContactForm />
+      <Contact />
       <Footer />
     </div>
   );
