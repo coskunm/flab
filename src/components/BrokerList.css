@@ -1,0 +1,44 @@
+.broker-list {
+  padding: 40px 0;
+  background-color: #f8f9fa;
+}
+
+.broker-list .container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.more-broker-btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.more-broker-btn {
+  background-color: transparent;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.more-broker-btn:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .broker-list {
+    padding: 24px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .more-broker-btn {
+    width: 100%;
+  }
+}
